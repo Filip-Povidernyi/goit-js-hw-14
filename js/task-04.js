@@ -8,9 +8,9 @@ decrementBtn.addEventListener('click', () => {
 
     counterValue -= 1;
     // Щоб значення не було менше 0 додаємо перевірку
-    if (counterValue < 0) {
-        counterValue = 0;
-    };
+    // if (counterValue < 0) {
+    //     counterValue = 0;
+    // };
 
     value.textContent = counterValue;
 });

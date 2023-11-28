@@ -13,7 +13,12 @@ const images = [
   },
 ];
 const list = document.querySelector('.gallery');
+const markupList = [];
 for (let image of images) {
   const markup = `<li><img src=${image.url} alt=${image.alt}/></li>`;
-  list.insertAdjacentHTML("beforeend", markup);
+  markupList.push(markup);
 };
+
+const markupString = markupList.join('');
+
+list.insertAdjacentHTML("beforeend", markupString);
